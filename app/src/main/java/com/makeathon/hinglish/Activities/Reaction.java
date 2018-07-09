@@ -183,20 +183,20 @@ public class Reaction extends Activity{
     void scorePopup() {
         restartGame.setVisibility(View.VISIBLE);
         if (player1_score > player2_score) {
-            player1_Ques.setText("Congratulations " + s_player1_naaam + "! You Won!");
+            player1_Ques.setText("Selamat " + s_player1_naaam + "! Anda menang!");
             player1_Ques.setTextColor(getResources().getColor(R.color.colorAccent));
-            player2_Ques.setText("Better luck next time " + s_player2_naaam);
+            player2_Ques.setText("Semoga beruntung dilain waktu , " + s_player2_naaam);
             player2_Ques.setTextColor(getResources().getColor(R.color.colorRed));
         }
         else if (player1_score < player2_score) {
-            player2_Ques.setText("Congratulations " + s_player2_naaam + "! You Won!");
+            player2_Ques.setText("Selamat " + s_player2_naaam + "! Anda menang!");
             player2_Ques.setTextColor(getResources().getColor(R.color.colorAccent));
-            player1_Ques.setText("Better luck next time " + s_player1_naaam);
+            player1_Ques.setText("BSemoga beruntung dilain waktu , " + s_player1_naaam);
             player1_Ques.setTextColor(getResources().getColor(R.color.colorRed));
         }
         else if (player1_score == player2_score) {
-            player1_Ques.setText("Match Draw!");
-            player2_Ques.setText("Match Draw!");
+            player1_Ques.setText("Seri !");
+            player2_Ques.setText("Seri !");
         }
     }
 
@@ -210,47 +210,47 @@ public class Reaction extends Activity{
 
         switch (rand) {
             case 0:
-                question = "No. of vowels in english language is more than 6. True?";
+                question = "Apakah Patung Liberty dibuat di negara Amerika Serikat?";
                 answer = false;
                 break;
             case 1:
-                question = "Acquit word's meaning is - to declare innocent. True?";
+                question = "Apakah Gurindam disebut sajak dua simetri ?";
                 answer = true;
                 break;
             case 2:
-                question = "Detour word's meaning is - diversion or deviation from path. True?";
+                question = "Apakah tulip berasal dari negara Turki ?";
                 answer = true;
                 break;
             case 3:
-                question = "Exuberance refers to: sad. True?";
+                question = "Apakah yuan mata uang Jepang ?";
                 answer = false;
                 break;
             case 4:
-                question = "Euphoria is a state of joy. True?";
+                question = "Apakah Jakarta ibukota Indonesia ?";
                 answer = true;
                 break;
             case 5:
-                question = "Articulate meaning: clear, effective. True?";
+                question = "Apakah komodo hewan khas Indonesia ?";
                 answer = true;
                 break;
             case 6:
-                question = "Meaning of the word MAVERICK is powerful. True?";
+                question = "Apakah mindanao berada di Indonesia ? ";
                 answer = false;
                 break;
             case 7:
-                question = "Obscure and hazy are synonym. True?";
-                answer = true;
+                question = "Apakah atlantis samudera terluas di dunia ? ";
+                answer = false;
                 break;
             case 8:
-                question = "Corpulent synonym is thin. True?";
+                question = "Apakah angkor wat terletak di negara Thailand ?";
                 answer = false;
                 break;
             case 9:
-                question = "Chubby, plump and tubby have same meaning. True?";
-                answer = true;
+                question = "Apakah Danau Toba adalah danau terluas di dunia ?";
+                answer = false;
                 break;
             case 10:
-                question = "Astonished is not a synonym of surprised. True?";
+                question = "Apakah bintang pada Bendera Amerika Serikat ada 60 ?";
                 answer = false;
                 break;
         }

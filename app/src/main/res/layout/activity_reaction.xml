@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Next Question"
+        android:text="Pertanyaan Selanjutnya"
         android:background="@drawable/custombutton_greendark"
         android:visibility="invisible"
         android:id="@+id/bt_reaction_nextQuestion"/>
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Restart"
+        android:text="Mulai Ulang"
         android:background="@drawable/custombutton_greendark"
         android:visibility="invisible"
         android:id="@+id/bt_reaction_restart"/>
@@ -33,7 +33,7 @@
             android:layout_alignParentTop="true"
             android:id="@+id/bt_reactions_player2_no"
             android:background="@color/colorgrey"
-            android:text="NO"
+            android:text="TIDAK"
             android:rotation="180"
             android:layout_weight="1"/>
         <Button
@@ -42,7 +42,7 @@
             android:layout_alignParentTop="true"
             android:id="@+id/bt_reactions_player2_yes"
             android:background="@color/colorgrey"
-            android:text="YES"
+            android:text="YA"
             android:rotation="180"
             android:layout_weight="1"/>
     </LinearLayout>
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#22303d"
-            android:text="Tap on yes to begin"
+            android:text="Tekan Ya untuk Memulai"
             android:textSize="15dp"
             android:textColor="@color/colorWhite"
             android:rotation="180"
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#22303d"
-            android:text="Tap on yes to begin"
+            android:text="Tekan Ya untuk Memulai"
             android:textSize="15dp"
             android:textColor="@color/colorWhite"
             android:id="@+id/bt_reaction_player1_ques"/>
@@ -98,7 +98,7 @@
             android:layout_alignParentTop="true"
             android:id="@+id/bt_reactions_player1_yes"
             android:background="@color/colorgrey"
-            android:text="YES"
+            android:text="YA"
             android:layout_weight="1"/>
         <Button
             android:layout_width="match_parent"
@@ -106,7 +106,7 @@
             android:layout_alignParentTop="true"
             android:id="@+id/bt_reactions_player1_no"
             android:background="@color/colorgrey"
-            android:text="NO"
+            android:text="TIDAK"
             android:layout_weight="1"/>
     </LinearLayout>
 

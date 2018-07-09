@@ -98,27 +98,27 @@ public class PlayOn extends AppCompatActivity {
         bt_test_nextQuestion.setVisibility(View.INVISIBLE);
         questionCount++;
 
-        if (badge.equals("Beginner")) {
+        if (badge.equals("Bupati")) {
 
 
             if (questionCount == 1) {
-                temp = "Environment - Spelling correct?";
+                temp = "Apakah Soekarno presiden pertama Indonesia?";
                 currentAnswer = "yes";
             }
             else if (questionCount == 2) {
-                temp = "I am an student.Correct Statement?";
+                temp = "Apakah Ki Hajar Dewantoro bapak kesehatan indonesia ?";
                 currentAnswer = "no";
             }
             else if (questionCount == 3) {
-                temp = "Meaning of Ignite is - cause to start burning";
+                temp = "Apakah Jakarta ibukota Indonesia ?";
                 currentAnswer = "yes";
             }
             else if (questionCount == 4) {
-                temp = "Eucalyptes-Spelling correct??";
+                temp = "Apakah kulit adalah indra untuk mengecap";
                 currentAnswer = "no";
             }
             else if (questionCount == 5) {
-                temp = "Mr Smith is a teacher.Correct Statement?";
+                temp = "Apakah Belanda pernah menjajah Indonesia?";
                 currentAnswer = "yes";
             }
             else if (questionCount == 6) {
@@ -129,29 +129,29 @@ public class PlayOn extends AppCompatActivity {
 
 
         }
-        else if (badge.equals("Mediocre")) {
+        else if (badge.equals("Gubernur")) {
 
 
 
             if (questionCount == 1) {
-                temp = "Photosinthesis-Spelling correct?";
+                temp = "Apakah yuan mata uang Jepang ?";
                 currentAnswer = "no";
             }
             else if (questionCount == 2) {
-                temp = "meaning of Furtive is to defend yourself";
+                temp = "Apakah elang jawa adalah burung tercepat di dunia ?";
                 currentAnswer = "no";
             }
             else if (questionCount == 3) {
-                temp = "He is a honest boy.Correct Statement?";
-                currentAnswer = "no";
+                temp = "Apakah Kurkumin terdapat dalam kunyit ?";
+                currentAnswer = "yes";
             }
             else if (questionCount == 4) {
-                temp = "meaning of hasten is to speed up";
+                temp = "Apakah tulip berasal dari negara Turki ?";
                 currentAnswer = "yes";
             }
             else if (questionCount == 5) {
-                temp = "Meryl Streep is an actress. Correct Statement?";
-                currentAnswer = "yes";
+                temp = "Apakah Danau Toba adalah danau terluas di dunia ?";
+                currentAnswer = "no";
             }
             else if (questionCount == 6) {
                 displayResult();
@@ -162,28 +162,28 @@ public class PlayOn extends AppCompatActivity {
 
 
         }
-        else if (badge.equals("Professional")) {
+        else if (badge.equals("Presiden")) {
 
 
 
             if (questionCount == 1) {
-                temp = "Cantankerous is a synonym of crotchety. Correct?";
+                temp = "Apakah Gurindam disebut sajak dua simetri ?";
                 currentAnswer = "yes";
             }
             else if (questionCount == 2) {
-                temp = "psychology-spelling correct?";
+                temp = "Apakah Tel Aviv Ibu Kota negara Israel ?";
                 currentAnswer = "yes";
             }
             else if (questionCount == 3) {
-                temp = "meaning of monotonous is sounded or spoken in a tone unvarying in pitch";
+                temp = "Apakah Indonesia berbentuk Republik ?";
                 currentAnswer = "yes";
             }
             else if (questionCount == 4) {
-                temp = "Entreprenurship - Spelling correct?";
+                temp = "Apakah angkor wat terletak di negara Thailand ?";
                 currentAnswer = "no";
             }
             else if (questionCount == 5) {
-                temp = "camaraaderie-Spelling correct?";
+                temp = "Apakah Patung Liberty dibuat di negara Amerika Serikat?";
                 currentAnswer = "no";
             }
             else if (questionCount == 6) {
@@ -205,9 +205,9 @@ public class PlayOn extends AppCompatActivity {
 
     void displayResult() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(PlayOn.this);
-        alertDialog.setTitle("Your Score");
-        alertDialog.setMessage("Congratulations! Your score is " + correctAnswers);
-        alertDialog.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+        alertDialog.setTitle("Skor anda");
+        alertDialog.setMessage("Selamat ! Skor anda " + correctAnswers);
+        alertDialog.setPositiveButton("Keluar", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Intent i = new Intent(PlayOn.this, Welcome.class);
                 startActivity(i);

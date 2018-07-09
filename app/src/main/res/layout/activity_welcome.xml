@@ -7,7 +7,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2 PLAYER BATTLE"
+        android:text="Cerdas Cermat Dengan Teman Anda"
         android:id="@+id/bt_welcome_learnGaming"
         android:layout_weight="1"
         android:background="@drawable/custombutton_greendark"
@@ -16,7 +16,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1 PLAYER CHALLENGE"
+        android:text="Berlatih Cerdas Cermat"
         android:id="@+id/bt_welcome_onePlayer_challenge"
         android:layout_weight="1"
         android:background="@drawable/custombutton_greenlight"
@@ -36,7 +36,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Instructions"
+        android:text="Instruksi"
         android:id="@+id/bt_welcome_Instructions"
         android:layout_weight="1"
         android:background="@drawable/custombutton_purplelight"
@@ -45,7 +45,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About"
+        android:text="Tentang"
         android:id="@+id/bt_welcome_settings"
         android:layout_weight="1"
         android:background="@drawable/custombutton_purpledark"

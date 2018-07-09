@@ -96,8 +96,8 @@ public class Welcome extends Activity {
 
     void aboutUsDialog(){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(Welcome.this);
-        alertDialog.setTitle("About");
-        alertDialog.setMessage("Tap-Tap is a fun and interactive way of learning english, assisted by an addictive game philosophy. \n\nTrippie Indian backgrounds, sci-fi sounds, amazing questions - what else do you think an adult Indian wants out of an educational game.");
+        alertDialog.setTitle("Tentang");
+        alertDialog.setMessage("Cerdas Cermat Tap ! adalah jalan interaktif dan menyenangkan untuk belajar ilmu pengetahuan umum. \n\nMusik yang menantang, Pertanyaan yang Menyenangkan.");
         alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
             }
@@ -107,8 +107,8 @@ public class Welcome extends Activity {
 
     void instructionsDialog(){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(Welcome.this);
-        alertDialog.setTitle("Instructions");
-        alertDialog.setMessage("It is a two player game, where both players receive a set of questions. They have two options for each question - YES or NO. \n\nThe one who answers first gets the point. Each round consists of 10 questions.");
+        alertDialog.setTitle("Instruksi");
+        alertDialog.setMessage("Cerdas Cermat Tap ! adalah game seru dimana dua orang beradu seberapa cepat anda menjawab pertanyaan ilmu pengetahuan umum yang ada jawaban Ya atau Tidak\n\nYang menjawab terlebih dahulu yang mendapatkan point. Tiap Ronde nya ada 10 pertanyaan.");
         alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 

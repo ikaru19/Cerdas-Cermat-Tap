@@ -62,11 +62,11 @@ public class SinglePlayer_Game extends AppCompatActivity {
 
         if (userAnswer.equals(currentAnswer)){
             bt_test_nextQuestion.setBackgroundColor(getResources().getColor(R.color.colorAccent));
-            Toast.makeText(SinglePlayer_Game.this, "Correct Answer!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(SinglePlayer_Game.this, "Jawaban anda benar ! ", Toast.LENGTH_SHORT).show();
             correctAnswers++;
         }
         else {
-            Toast.makeText(SinglePlayer_Game.this, "Oops! Wrong Answer", Toast.LENGTH_SHORT).show();
+            Toast.makeText(SinglePlayer_Game.this, "Oops! Jawaban anda salah", Toast.LENGTH_SHORT).show();
             bt_test_nextQuestion.setBackgroundColor(getResources().getColor(R.color.colorRed));
         }
 
@@ -79,37 +79,37 @@ public class SinglePlayer_Game extends AppCompatActivity {
         questionCount++;
 
         if (questionCount == 1) {
-            temp = "Ram studies in an University. Correct statement?";
+            temp = "Apakah soekarno presiden kedua Indonesia ? ";
             currentAnswer = "no";
         }
         else if (questionCount == 2) {
-            temp = "Antonym for difficult is easy";
+            temp = "Apakah komodo hewan khas Indonesia ? ";
             currentAnswer = "yes";
         }
         else if (questionCount == 3) {
-            temp = "Entreprenurship - Spelling correct? ";
+            temp = "Apakah mindanao berada di Indonesia ? ";
             currentAnswer = "no";
         }
         else if (questionCount == 4) {
-            temp = "Meaning of ominous is threatening. Correct?";
-            currentAnswer = "yes";
+            temp = "Apakah atlantis samudera terluas di dunia ? ";
+            currentAnswer = "no";
         }
         else if (questionCount == 5) {
-            temp = "Cantankerous is a synonym of crotchety. Correct?";
-            currentAnswer = "yes";
+            temp = "Apakah mindanao berada di Indonesia ? ";
+            currentAnswer = "no";
         }
         else if (questionCount == 6) {
 
             String badge;
 
             if (correctAnswers == 5){
-                badge = "Professional";
+                badge = "Presiden";
             }
             else if (correctAnswers == 3 || correctAnswers == 4 ){
-                badge = "Mediocre";
+                badge = "Gubernur";
             }
             else {
-                badge = "Beginner";
+                badge = "Bupati";
             }
             temp = "Congratulations! Your score is " + correctAnswers + ". You get a " + badge + " badge.";
 
@@ -121,8 +121,8 @@ public class SinglePlayer_Game extends AppCompatActivity {
 
     void displayResult(final String badge) {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(SinglePlayer_Game.this);
-        alertDialog.setTitle("Your Score");
-        alertDialog.setMessage("Congratulations! Your score is " + correctAnswers + ". You get a " + badge + " badge.");
+        alertDialog.setTitle("Skor anda");
+        alertDialog.setMessage("Selamat ! skor anda adalah " + correctAnswers + ". Kamu mendapat medal " + badge + " .");
         alertDialog.setPositiveButton("Play On!", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 

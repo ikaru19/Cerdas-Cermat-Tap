@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Question:"
+                android:text="Pertanyaan :"
                 android:textSize="20dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             android:textColor="@color/colorWhite"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-            android:text="YES"
+            android:text="YA"
             android:textSize="20dp"
             android:id="@+id/bt_playon_yes"/>
         <Button
@@ -58,7 +58,7 @@
             android:textColor="@color/colorWhite"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:text="NO"
+            android:text="TIDAK"
             android:textSize="20dp"
             android:id="@+id/bt_playon_no"/>
     </LinearLayout>
@@ -71,7 +71,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/custombutton_blue_curve"
-        android:text="Next Question"
+        android:text="Pertanyaan Selanjutnya"
         android:textColor="@color/colorWhite"
         android:visibility="invisible"
         android:id="@+id/bt_playon_nextQuestion"/>

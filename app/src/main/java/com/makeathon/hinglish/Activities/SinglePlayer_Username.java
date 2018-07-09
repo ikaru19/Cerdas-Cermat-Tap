@@ -31,7 +31,7 @@ public class SinglePlayer_Username extends Activity{
                 s_playerName = et_playerName.getText().toString();
 
                 if (s_playerName.equals("")) {
-                    Toast.makeText(SinglePlayer_Username.this, "Player name cannot be empty!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SinglePlayer_Username.this, "Maaf nama tidak bisa kosong!", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     instructionDialog();
@@ -57,7 +57,7 @@ public class SinglePlayer_Username extends Activity{
     void instructionDialog(){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(SinglePlayer_Username.this);
         alertDialog.setTitle("Instructions");
-        alertDialog.setMessage("You would be asked 5 questions. Based on no. of correct answers, you would be given a badge:\n\nBEGINNER, \n\nMEDIOCRE or \n\nPROFESSIONAL.\n\nFurther you would be receiving questions based on your badge level.");
+        alertDialog.setMessage("Anda akan diberikan 5 pertanyaan tentang ilmu pengetahuan umum anda , hanya perlu menjawab ya atau tidak , Anda akan diberikan medal:\n\nBupati, \n\nGubernur atau \n\nPresiden.\n\nDan anda akan menerima level pertanyaan tergantung dari medal anda.");
         alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 SharedPreferenceMethods.setString(getApplicationContext(), SharedPreferenceMethods.SINGLE_PLAYER_NAME, s_playerName);
